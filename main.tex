@@ -83,6 +83,9 @@ O tamanho do espaço de procura aumenta exponencialmente dependendo de n, o núm
 
 \hspace{\parindent}Cada cidade é identificada com um nó (ou vértice) e as rotas que ligam cada par de nós são identificadas como arcos (ou arestas). A cada uma destas linhas estarão associadas as distâncias (ou custos) correspondentes. Desde que seja possível ir diretamente de uma cidade para qualquer outra, o gráfico diz-se completo. Uma viagem que passe por todas as cidades corresponde a um ciclo Hamiltoniano, representado por um conjunto específico de linhas. A distância do ciclo é o somatório das distâncias das linhas presentes no mesmo.
 
+\includegraphics[scale=0.4]{Caixeiro.jpg}
+\\exemplo de grafo hamiltoniano
+
 \pagebreak
 
 \section{Algoritmos}
@@ -131,4 +134,33 @@ fim senão
 
 fim função
 
+\pagebreak
+
+\section{Desempenho e instruções de uso}
+
+Para compilar: gcc grafos.c -o grafos\\
+Para executar: ./grafos\\
+
+\subsection{Desempenho}
+\begin{itemize}
+    \item Tempo médio de execução (Caixeiro-viajante + identificação de grafo hamiltoniano num grafo de 6 vértices): 13.06 ms.
+    \item Memória utilizada: 3072 bytes.
+\end{itemize}
+
+\subsection{Equipamento utilizado}
+\begin{itemize}
+    \item Intel Core i5-3230M com 2.6GHz de clock.
+    \item 8 GB de memória RAM.
+    \item Sistema operacional de 64 bits.
+\end{itemize}
+
+\section{Referências}
+
+\begin{itemize}
+    \item https://pt.wikipedia.org/wiki/Problema\_do\_caixeiro-viajante
+    \item https://pt.wikipedia.org/wiki/Caminho\_hamiltoniano
+    \item https://malbarbo.pro.br/arquivos/2013/6898/11-caminho-hamiltoniano-e-o-problema-do-caixeiro-viajante.pdf
+    \item https://www.ime.usp.br/\tilde$ pf/algoritmos\_para\_grafos/aulas/max-weight-paths.html
+    \item https://www.redalyc.org/jatsRepo/4675/467553545011/html/index.html
+\end{itemize}
 \end{document}
